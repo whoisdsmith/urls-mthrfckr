@@ -9,6 +9,7 @@
 3. [HTMRL](#htmrl)
 4. [MDURL](#mdurl)
 5. [RDURL](#rdurl)
+6. [URL2MD](#url2md)
 
 <!-- ABOUT THE PROJECT -->
 
@@ -195,5 +196,35 @@ To use this script, follow these steps:
 - The script iterates through all `<DT>` tags containing bookmarks, and extracts the URL and description (if available) for each bookmark.
 - Duplicate URLs are removed, and missing descriptions are fetched using `requests` , if possible.
 - Finally, the updated HTML is saved to a new file in the same directory as the original file, and statistics are displayed to the user.
+
+---
+
+### URL2MD
+
+This Python script is designed to fetch the description and title of a list of URLs and save them in a markdown file. The script uses the following Python modules:
+
+- `requests` - For sending HTTP requests and fetching the raw HTML content of the URLs
+- `re` - For extracting URLs from user input using regular expressions
+- `bs4` - (BeautifulSoup) For parsing the HTML content and extracting the description and title
+
+#### Usage
+
+To use this script, follow these steps:
+
+1. Ensure that the required Python modules are installed ( `requests` ,  `re` , and  `bs4` ).
+2. Run the script.
+3. When prompted, enter the URLs you want to fetch descriptions and titles for. URLs can be provided in plain format or in markdown format.
+4. The script will extract the URLs using regular expressions and fetch the description and title for each URL.
+5. The fetched information will be saved in a markdown file named  `link_descriptions.md`  in the same directory as the script.
+
+#### Code Overview
+
+The script begins by importing the required Python modules ( `requests` ,  `re` , and  `bs4` ).
+
+Next, the script defines a function  `fetch_description_and_title(url)`  to fetch the description and title of a given URL. This function sends a GET request to fetch the raw HTML content, parses the HTML using  `BeautifulSoup` , and extracts the description and title using specific meta tags and title tags.
+
+The script then defines the  `main()`  function. This function prompts the user for a bulk list of URLs, extracts the URLs using regular expressions, and iterates through each URL to fetch the description and title using the  `fetch_description_and_title()`  function. The fetched information is then written to a markdown file.
+
+Finally, the  `main()`  function is called if the script is run directly, executing the entire process.
 
 ---
