@@ -4,11 +4,11 @@
 
 ## Table of Contents
 
-1. [Cleanr](###cleanr)
-2. [CSVRL](###cvrl)
-3. [HTMRL](###htmrl)
-4. [MDURL](###mdurl)
-5. [RDURL](###rdrl)
+1. [CLEANR](#cleanr)
+2. [CSVRL](#csvrl)
+3. [HTMRL](#htmrl)
+4. [MDURL](#mdurl)
+5. [RDURL](#rdurl)
 
 <!-- ABOUT THE PROJECT -->
 
