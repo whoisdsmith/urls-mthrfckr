@@ -4,11 +4,11 @@
 
 ## Table of Contents
 
-1. [cleanr.py](#cleanr)
-2. [cvrl.py](#cvrl)
-3. [htmrl.py](#htmrl)
-4. [mdurl.py](#mdurl)
-5. [raindrophtml.py](#raindrophtml)
+1. [Cleanr](###cleanr)
+2. [CSVRL](###cvrl)
+3. [HTMRL](###htmrl)
+4. [MDURL](###mdurl)
+5. [RDURL](###rdrl)
 
 <!-- ABOUT THE PROJECT -->
 
@@ -20,7 +20,7 @@ This is a collection of python scripts that will:
 - Dedupe and fetch url descriptions for Raindrop.io exported html files using raindrophtml.py
 - Dedupe and fetch url descriptions for any markdown file using mdurl.py
 
-### Cleanr Utility
+### CLEANR
 
 #### Overview
 
@@ -72,7 +72,7 @@ Logs are saved in a file named `file_cleanup.log` in the same directory as the s
 
 ---
 
-### CVRL Processing For CSV Files
+### CSVRL
 
 This script reads a CSV file containing bookmark information, processes the URLs, and writes the updated data to a new CSV file. It performs the following tasks:
 
@@ -102,7 +102,7 @@ To use the script, follow these steps:
 
 ---
 
-### HTML Bookmark Processor
+### HTMRL
 
 This script processes an HTML bookmark file to deduplicate URLs and fetch missing descriptions.
 
@@ -143,7 +143,7 @@ To use this script:
 
 ---
 
-### Markdown Processor
+### MDURL
 
 `mdurl.py` is a Python script that helps you manage URLs in your markdown files. It can fetch the description of a URL and normalize the URL for consistency.
 
@@ -168,7 +168,7 @@ Make sure to install these dependencies using pip
 
 ---
 
-### Raindrop HTML Processing
+### RDURL
 
 This Python script is designed to process an HTML bookmark file, removing duplicate bookmarks and fetching missing descriptions for bookmarks. The script uses the following Python modules:
 
