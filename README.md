@@ -15,9 +15,9 @@
 This is a collection of python scripts that will:
 
 - Clean your Bookmark files of non-ascii characters with cleanr.py (I use this because my collection of exported bookmarks always seems to have some bad unicode characters and this script fixes that) If you don;t have these issues than don't use it, but if you do use it, make sure to run this first.
-- Dedupe, fetch url descriptions and url images for CSV files using cvrl.py
+- Dedupe, fetch url descriptions and url images for CSV files using csvrl.py
 - Dedupe and fetch url descriptions for bookmark.html files using htmrl.py
-- Dedupe and fetch url descriptions for Raindrop.io exported html files using raindrophtml.py
+- Dedupe and fetch url descriptions for Raindrop.io exported html files using rdurl.py
 - Dedupe and fetch url descriptions for any markdown file using mdurl.py
 
 ### CLEANR
@@ -91,7 +91,7 @@ To use the script, follow these steps:
 3. Navigate to the directory where the script is saved.
 4. Run the script with the following command:
 
-`python cvrl.py`
+`python csvrl.py`
 
 - The script will prompt you to enter the path to the CSV file.
 - After providing the file path, the script will process the URLs.
